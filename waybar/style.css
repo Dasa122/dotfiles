@@ -1,0 +1,42 @@
+ 
+* {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    min-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+window#waybar {
+    background: rgba(51, 19, 96, 0.4);
+    color: white;
+    border-radius: 40px;
+}
+#cpu {
+    color: black;
+    margin: 0 2px 0 2px;
+}
+#cpu:hover {
+    background-color: rgba(92, 92, 92, 0.5);
+    padding: 11px;
+    margin: 6px;
+}
+
+#clock {
+    font-size: 25px;
+}
+
+
+#workspaces {
+    background: rgba(51, 19, 96, 0);
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: white;
+}
+
+/* #custom-power {
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+} */
+
