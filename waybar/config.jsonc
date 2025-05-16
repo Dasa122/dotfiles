@@ -8,7 +8,6 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "custom/vpn",
         "custom/wireguard-manager"
     ],
     "modules-center": [
@@ -116,15 +115,6 @@
         },
         "on-click": "pavucontrol"
     },
-
-    "custom/vpn": {
-        "interval": 3,
-        "format": "{}",
-        "exec": "ip add show | grep -qF wg0 && echo VPN ● || echo VPN ○",
-        "max-length": "100",
-        "on-click": "sudo wg-quick up wg0",
-        "on-click-right": "sudo wg-quick down wg0"
-     },
 
     "custom/power": {
         "format" : "⏻ ",
