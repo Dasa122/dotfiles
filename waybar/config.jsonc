@@ -46,12 +46,12 @@
     "format": "{icon}",
     "format-icons": {
         "connected": "<span color=\"#50fa7b\">VPN: 🔒</span>",
-        "disconnected": "<span color=\"#ff5555\">VPN: 🔓</span>",
+        "disconnected": "<span color=\"#ff5555\">VPN: 🔓</span>"
     },
     "interval": "once",
     "on-click": "/home/dasa122/.config/hypr/waybar/wireguard-manager/wireguard-manager.sh -t && pkill -SIGRTMIN+1 waybar",
     "return-type": "json",
-    "signal": 1,
+    "signal": 1
 },
 
 
@@ -83,17 +83,15 @@
     "battery": {
         "states": {
             // "good": 95,
-            "warning": 30,
-            "critical": 15
+            "warning": 50
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% ⚡︎",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+        "interval": 3
     },
 
     "pulseaudio": {

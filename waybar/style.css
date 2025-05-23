@@ -51,20 +51,22 @@ window#waybar {
 
 #battery.charging {
     color: black;
-    background-color: rgba(22, 155, 8, 0.44);
+    background-color: rgba(22, 155, 8, 0.3);
     border-radius: 20px;
 }
 
 @keyframes blink {
     to {
-        background-color: rgba(202, 6, 6, 0.44);
+        background-color: rgba(202, 6, 6, 0.3);
         color: black;
+        border-radius: 20px;
     }
 }
 
-#battery.warning:not(.charging) {
-    background-color: rgba(202, 6, 6, 0.44);
-    color: white;
+ #battery.warning:not(.charging) {
+    background-color: rgb(255, 6, 6);
+    color: black;
+    border-radius: 20px;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);

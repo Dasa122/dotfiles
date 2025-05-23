@@ -48,7 +48,7 @@ prompt {
 
 inputbar {
     children: ["prompt", "entry"];
-    spacing: @g-spacing;
+    spacing: 10px;
 }
 
 entry {
@@ -58,15 +58,15 @@ entry {
 }
 
 mainbox {
-    spacing: @g-spacing;
-    margin: @g-margin;
+    spacing: 10px;
+    margin: 0;
     padding: @g-padding;
     children: ["inputbar", "listview", "message"];
 }
 
 element {
-    spacing: @g-spacing;
-    margin: @g-margin;
+    spacing: 10px;
+    margin: 0;
     padding: @g-padding;
     border: 0px solid;
     border-radius: @b-radius;
