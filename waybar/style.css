@@ -134,7 +134,13 @@ window#waybar {
 }
 
 #clock {
+    color: black;
+    font-weight: bold;
     font-size: 25px;
+    background-color: rebeccapurple;
+    margin: 0 1.5px 0 1.5px;
+    border-radius: 30px;
+    padding: 0 10px 0 10px;
 }
 
 
