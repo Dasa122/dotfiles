@@ -149,3 +149,19 @@ window#waybar {
     color: white;
 }
 
+#custom-wireguard-manager {
+    color: black;
+    background-color: rebeccapurple;
+    margin: 0 1.5px 0 1.5px;
+    padding: 0 10px 0 10px;
+    border-radius: 30px;
+}
+
+#workspaces {
+    background-color: gray;
+    color: purple;
+    margin: 0 1.5px 0 1.5px;
+    padding: 0 5px 0 5px;
+    border-radius: 30px;
+}
+
