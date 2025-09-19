@@ -8,7 +8,7 @@
 
 
 window#waybar {
-    background: rgba(51, 19, 96, 0.4);
+    background: rgba(51, 19, 96, 0); 
     color: white;
     border-radius: 40px;
 }
@@ -158,10 +158,20 @@ window#waybar {
 }
 
 #workspaces {
-    background-color: gray;
-    color: purple;
+    background-color: rebeccapurple;
     margin: 0 1.5px 0 1.5px;
     padding: 0 5px 0 5px;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
+#workspaces button {
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+    color: white;
+}
+
+#workspaces button:hover {
+    background-color: rgba(92, 92, 92, 0.5);
+}
