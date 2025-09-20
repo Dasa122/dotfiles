@@ -21,6 +21,7 @@
         "temperature",
         "backlight",
         "battery",
+        "custom/keyboard-layout",
         "custom/power"
     ],
 
@@ -40,6 +41,14 @@
  	 "sort-by-number": true
 	},
 
+    "custom/keyboard-layout": {
+        "exec": "hyprctl devices | grep -A 3 \"$DEVICE$\" | grep \"active keymap:\" | tail -n 1 | awk '{print tolower(substr($3,1,2))}'",
+        "format": "{text}",
+        "interval": "once",
+        "on-click": "hyprctl switchxkblayout all next",
+        "return-type": "text",
+        "signal": 1
+    },
 
 "custom/wireguard-manager": {
     "exec": "exec /home/dasa122/.config/hypr/waybar/wireguard-manager/wireguard-manager.sh -s",
