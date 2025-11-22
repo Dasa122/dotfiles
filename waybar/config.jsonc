@@ -15,7 +15,7 @@
         "clock"
     ],
     "modules-right": [
-        "pulseaudio",
+        "wireplumber",
         "cpu",
         "memory",
         "temperature",
@@ -103,27 +103,40 @@
         "interval": 3
     },
 
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+//    "pulseaudio": {
+//        // "scroll-step": 1, // %, can be a float
+//        "format": "{volume}% {icon} {format_source}",
+//        "format-bluetooth": "{volume}% {icon} {format_source}",
+//        "format-bluetooth-muted": " {icon} {format_source}",
+//        "format-muted": " {format_source}",
+//        "format-source": "{volume}% ",
+//        "format-source-muted": "",
+//        "format-icons": {
+//            "headphone": "",
+//            "hands-free": "",
+//            "headset": "",
+//            "portable": "",
+//            "phone": "",
+//            "car": "",
+//            "default": ["", "", ""]
+//        },
+//        "on-click": "pavucontrol"
+//    },
+
+    "wireplumber": {
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-muted": " {format_source}",
+        "format-source": "{source_volume}% ",
+        "format-source-muted": " ",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "default": ["", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "helvum"
     },
 
+
     "custom/power": {
+
         "format" : "⏻ ",
 		"tooltip": false,
 		"menu": "on-click",
